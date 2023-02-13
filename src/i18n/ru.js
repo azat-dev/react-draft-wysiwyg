@@ -14,6 +14,7 @@ export default {
   "components.controls.blocktype.code": "Код",
   "components.controls.blocktype.blocktype": "Форматирование",
   "components.controls.blocktype.normal": "Обычный",
+  "components.controls.blocktype.structuredtext": "StructuredText",
 
   // Color Picker
   "components.controls.colorpicker.colorpicker": "Выбор цвета",

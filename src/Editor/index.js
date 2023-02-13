@@ -33,8 +33,23 @@ import getHashtagDecorator from '../decorators/HashTag';
 import getBlockRenderFunc from '../renderer';
 import defaultToolbar from '../config/defaultToolbar';
 import localeTranslations from '../i18n';
+import Immutable from 'immutable';
 import './styles.css';
 import '../../css/Draft.css';
+
+const customBlockRenderMap = Immutable.Map({
+  'structured-text': {
+    element: 'div'
+  },
+  'foldable': {
+    element: 'div'
+  },
+  'examples': {
+    element: 'div'
+  }
+});
+
+const extendedBlockRenderMap = blockRenderMap.merge(customBlockRenderMap);
 
 class WysiwygEditor extends Component {
   constructor(props) {
@@ -493,7 +508,7 @@ class WysiwygEditor extends Component {
             blockRendererFn={this.blockRendererFn}
             handleKeyCommand={this.handleKeyCommand}
             ariaLabel={ariaLabel || 'rdw-editor'}
-            blockRenderMap={blockRenderMap}
+            blockRenderMap={extendedBlockRenderMap}
             {...this.editorProps}
           />
         </div>

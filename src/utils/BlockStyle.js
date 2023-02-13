@@ -4,5 +4,18 @@ export default function blockStyleFn(block: Object): string {
   if (blockAlignment) {
     return `rdw-${blockAlignment}-aligned-block`;
   }
+
+  const type = block.getType();
+  if (type === 'structured-text') {
+    return 'structured-text';
+  }
+
+  if (type === 'foldable') {
+    return 'foldable';
+  }
+
+  if (type === 'examples') {
+    return 'examples';
+  }
   return '';
 }

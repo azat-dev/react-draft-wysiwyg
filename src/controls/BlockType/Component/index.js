@@ -40,6 +40,26 @@ class LayoutComponent extends Component {
       displayName: translations['components.controls.blocktype.normal'],
     },
     {
+      label: 'Blockquote',
+      displayName: translations['components.controls.blocktype.blockquote'],
+    },
+    {
+      label: 'Code',
+      displayName: translations['components.controls.blocktype.code'],
+    },
+    {
+      label: 'StructuredText',
+      displayName: translations['components.controls.blocktype.structuredtext'],
+    },
+    {
+      label: 'Foldable',
+      displayName: translations['components.controls.blocktype.foldable'],
+    },
+    {
+      label: 'Examples',
+      displayName: translations['components.controls.blocktype.examples'],
+    },
+    {
       label: 'H1',
       displayName: translations['components.controls.blocktype.h1'],
     },
@@ -62,14 +82,6 @@ class LayoutComponent extends Component {
     {
       label: 'H6',
       displayName: translations['components.controls.blocktype.h6'],
-    },
-    {
-      label: 'Blockquote',
-      displayName: translations['components.controls.blocktype.blockquote'],
-    },
-    {
-      label: 'Code',
-      displayName: translations['components.controls.blocktype.code'],
     },
   ];
 

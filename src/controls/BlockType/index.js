@@ -53,14 +53,17 @@ class BlockType extends Component {
 
   blocksTypes = [
     { label: 'Normal', style: 'unstyled' },
+    { label: 'Blockquote', style: 'blockquote' },
+    { label: 'Code', style: 'code' },
+    { label: 'StructuredText', style: 'structured-text' },
+    { label: 'Foldable', style: 'foldable' },
+    { label: 'Examples', style: 'examples' },
     { label: 'H1', style: 'header-one' },
     { label: 'H2', style: 'header-two' },
     { label: 'H3', style: 'header-three' },
     { label: 'H4', style: 'header-four' },
     { label: 'H5', style: 'header-five' },
     { label: 'H6', style: 'header-six' },
-    { label: 'Blockquote', style: 'blockquote' },
-    { label: 'Code', style: 'code' },
   ];
 
   doExpand = () => {

@@ -14,6 +14,7 @@ export default {
   "components.controls.blocktype.code": "Kode",
   "components.controls.blocktype.blocktype": "Blok Type",
   "components.controls.blocktype.normal": "Normal",
+  "components.controls.blocktype.structuredtext": "StructuredText",
 
   // Color Picker
   "components.controls.colorpicker.colorpicker": "Farver",
